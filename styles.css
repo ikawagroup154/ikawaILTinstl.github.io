@@ -1,0 +1,78 @@
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+#contractStatus {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+}
+input[readonly] {
+    background-color: #f0f0f0;
+    color: #555;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+    background-color: #218838;
+}
+#submissionList {
+    margin-top: 20px;
+}
+.submission-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.submission-item:last-child {
+    border-bottom: none;
+}
+
+.logo {
+display: block;
+width: 250px; /* Slightly larger for prominence; adjust as needed */
+height: auto;
+margin: 0 auto 20px auto; /* Centers horizontally and adds space below */
+}

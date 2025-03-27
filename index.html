@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Ikawa Group - ILT Installation Submission</title>
+</head>
+
+</head>
+<body>
+<body>
+  <div class="container">
+        <img src="https://static.wixstatic.com/media/a11a6c_49ec3d5c0dfb462c946dd7da1a0c5d86~mv2.png/v1/crop/x_0,y_206,w_938,h_430/fill/w_302,h_140,al_c,q_95,usm_0.66_1.00_0.01,enc_avif,quality_auto/ikawa%20logo%20nobg.png" alt="IKAWA Logo" class="logo">
+    <h1>Ikawa Group - ILT Installation Submission</h1>
+  
+    <div id="contractStatus"></div>
+    <div class="container">
+        <form id="iltForm" onsubmit="submitForm(event)">
+            <label for="outletName">Outlet Name</label>
+            <select id="outletName" required onchange="updateFields()">
+                <option value="" disabled selected>Select Outlet</option>
+                <option value="Sushi King Berjaya Times Square, KL">Sushi King Berjaya Times Square, KL</option>
+                <option value="Sushi King Melawati Mall, Wangsamaju">Sushi King Melawati Mall, Wangsamaju</option>
+                <option value="Sushi King Setia City mall, Setia Alam">Sushi King Setia City mall, Setia Alam</option>
+                <option value="Sushi King All Season Place, Penang">Sushi King All Season Place, Penang</option>
+                <option value="Sushi King Tropicana Garden, PJ">Sushi King Tropicana Garden, PJ</option>
+                <option value="Sushi King SACC, Shah Alam">Sushi King SACC, Shah Alam</option>
+                <option value="Sushi King SOGO, KL">Sushi King SOGO, KL</option>
+                <option value="Sushi King KL Festival, KL">Sushi King KL Festival, KL</option>
+                <option value="Sushi King Mitsui Klia">Sushi King Mitsui Klia</option>
+                <option value="Sushi King Taman Equine">Sushi King Taman Equine</option>
+                <option value="Sushi King Lotus Kepong">Sushi King Lotus Kepong</option>
+                <option value="Sushi King AEON Maluri">Sushi King AEON Maluri</option>
+                <option value="Sushi King AEON Rawang">Sushi King AEON Rawang</option>
+                <option value="Sushi King Kiosk Petronas USJ20">Sushi King Kiosk Petronas USJ20</option>
+                <option value="Sushi King Eco Grandeur">Sushi King Eco Grandeur</option>
+                <option value="Sushi King Pavilion Bukit Jalil">Sushi King Pavilion Bukit Jalil</option>
+                <option value="Sushi King Mydin Tunjung Kota Bharu">Sushi King Mydin Tunjung Kota Bharu</option>
+                <option value="Sushi King Mitsui Lalaport BBCC">Sushi King Mitsui Lalaport BBCC</option>
+                <option value="Sushi King Selayang Mall">Sushi King Selayang Mall</option>
+                <option value="Sushi King Eco Hill Semenyih">Sushi King Eco Hill Semenyih</option>
+                <option value="Sushi King Aeon Seremban 2">Sushi King Aeon Seremban 2</option>
+                <option value="Sushi King NSK Kuchai Lama">Sushi King NSK Kuchai Lama</option>
+                <option value="Sushi King IOI City Mall">Sushi King IOI City Mall</option>
+                <option value="Sushi King Kiosk IOI City Mall">Sushi King Kiosk IOI City Mall</option>
+                <option value="Sushi King Mydin Subang">Sushi King Mydin Subang</option>
+                <option value="Sushi King Kiosk Shell Mint Hotel">Sushi King Kiosk Shell Mint Hotel</option>
+            </select>
+
+            <label for="address">Address</label>
+            <textarea id="address" rows="3" placeholder="Address will auto-populate" required readonly></textarea>
+
+            <label for="installationDate">Installation Date</label>
+            <input type="date" id="installationDate" readonly required>
+
+            <label for="initialDate">Initial Date</label>
+            <input type="date" id="initialDate" readonly required>
+
+            <label for="equipmentQty">Equipment Quantity</label>
+            <input type="number" id="equipmentQty" readonly required>
+
+            <label for="iltModel">ILT Model</label>
+            <input type="text" id="iltModel" readonly required>
+
+            <label for="agreementDate">Agreement Chopped & Signed Date</label>
+            <input type="date" id="agreementDate" readonly required>
+
+            <label for="rentalRate">Rental Rate (RM/MYR)</label>
+            <input type="text" id="rentalRate" readonly required>
+
+            <label for="glueboardsPerMonth">Glueboards Given per Month</label>
+            <input type="number" id="glueboardsPerMonth" min="1" required>
+
+            <label for="uvTubeChangeDate">UV Tube Change Date</label>
+            <input type="date" id="uvTubeChangeDate" min="2025-01-01" required>
+
+            <label for="discontinuedDate">Discontinued Date</label>
+            <input type="date" id="discontinuedDate">
+
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+
+        <div id="submissionList">
+            <h2>Recent Submissions</h2>
+            <!-- Submissions will be displayed here -->
+          
+        </div>
+    </div>
+</body>
+</html>
